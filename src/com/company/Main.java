@@ -23,13 +23,10 @@ public class Main {
                 "\nInput original word");
 
         Scanner userInput = new Scanner(System.in);
-
         String origWord = userInput.nextLine().toLowerCase();
-
 
         System.out.println("Input Anagram");
         String anaWord = userInput.nextLine().toLowerCase();
-
 
         //The alphabet for the orig word
         int a = 0;
