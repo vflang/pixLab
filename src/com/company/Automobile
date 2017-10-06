@@ -1,0 +1,47 @@
+package com.company;
+
+/**
+ * Created by Veronica Lang on 10/5/2017.
+ */
+/*
+Project Gas Mileage:
+Create a class called Automobile in which you pass a gas mileage
+(miles per gallon) parameter to the constructor which in turn passes
+it to the state variable, mpg. The constructor should also set the
+state variable gallons(gas in tank) to 0. \
+
+A method called fillUp adds gas to the tank.
+
+Another method, takeTrip, removes gas from the tank as
+the result of driving a specified number of miles.
+
+The method reportFuel returns how much gas is left in the car.
+*/
+public class Automobile {
+    public double gasMileage;
+    public double gallons;
+
+    public Automobile() {
+        gallons = 0;
+    }
+
+    public Automobile(double mpg) {
+        gasMileage = mpg;
+    }
+
+
+    public void fillUp(double a) { //a --> add
+        gallons = gallons + a;
+    }
+
+    public void takeTrip(double m) { //m --> miles
+        gallons = gallons - (m/gasMileage);
+
+    }
+
+    public double reportFuel() {
+        return gallons;
+    }
+}
+
+
